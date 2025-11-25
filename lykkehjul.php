@@ -26,7 +26,7 @@ require "settings/init.php";
 
 
 
-<h1>Lykkehjul – land på “VINDER”</h1>
+<h1>du sneg dig med på bussen</h1>
 
 
 
@@ -41,7 +41,9 @@ require "settings/init.php";
 
 <div id="pointer"></div>
 
-<button id="spinBtn" style="padding: 10px 25px; font-size: 18px;">SPIN!</button>
+<div class="mt-4">
+<button id="spinBtn" class="bg-pink rounded-pill px-5 py-2 border-0">SPIN!</button>
+</div>
 
 <h2 id="result"></h2>
 
@@ -61,7 +63,7 @@ require "settings/init.php";
                 result.textContent = "DU VANDT! ✔ Du må fortsætte!";
                 result.style.color = "green";
             } else {
-                result.textContent = "Forkert ❌ – du er ude!";
+                result.textContent = "Du døde";
                 result.style.color = "red";
             }
         }, 3000);

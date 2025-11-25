@@ -26,6 +26,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // 5. Du kan lave styling her...
 *{
 	text-transform: uppercase;
+	color: #ffffff !important;
 }
 
 /* SELVE HJULET */
@@ -33,15 +34,15 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	width: 350px;
 	height: 350px;
 	border-radius: 50%;
-	border: 8px solid black;
+	border: 8px solid #ffffff;
 	margin: 20px auto;
 	background: conic-gradient(
-									#ff5c5c 0deg 60deg,
-									#ffdd55 60deg 120deg,
-									#5cff5c 120deg 180deg,
-									#55ddff 180deg 240deg,
-									#b355ff 240deg 300deg,
-									#55ff99 300deg 360deg
+									#7c0000 0deg 60deg,
+									#ff8b8b 60deg 120deg,
+									#7c0000 120deg 180deg,
+									#ff8b8b 180deg 240deg,
+									#7c0000 240deg 300deg,
+									#ff8b8b 300deg 360deg
 	);
 	position: relative;
 	transition: transform 3s ease-out;
@@ -54,7 +55,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	top: 50%;
 	transform-origin: 0 0;
 	font-size: 18px;
-	font-weight: bold;
+
 }
 
 /* PILEN */
@@ -66,3 +67,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	border-bottom: 40px solid black;
 	margin: 0 auto;
 }
+
+#spinBtn{
+	font-size: 3rem;
+}
+

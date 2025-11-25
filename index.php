@@ -21,7 +21,7 @@ require "settings/init.php";
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="text-center p-4">
+<body class="text-center p-4 bg-rød">
 
 
 
@@ -33,7 +33,7 @@ require "settings/init.php";
 <div id="wheel">
     <div class="label" style="transform: rotate(30deg) translate(120px);">Taber</div>
     <div class="label" style="transform: rotate(90deg) translate(120px);">Taber</div>
-    <div class="label" style="transform: rotate(150deg) translate(120px);">VINDER</div>
+    <div class="label" style="transform: rotate(150deg) translate(120px);">taber</div>
     <div class="label" style="transform: rotate(210deg) translate(120px);">Taber</div>
     <div class="label" style="transform: rotate(270deg) translate(120px);">Taber</div>
     <div class="label" style="transform: rotate(330deg) translate(120px);">Taber</div>

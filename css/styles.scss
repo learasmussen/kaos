@@ -1,8 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
 $link-decoration: none;
+$font-family-base: "Anton", sans-serif;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -10,7 +15,8 @@ $link-decoration: none;
 
 // 4. Include any default map overrides here
 $custom-colors: (
-	"farve": $cyan-400,
+	"rød": #7c0000,
+	"pink": #ff8b8b,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -18,3 +24,45 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+*{
+	text-transform: uppercase;
+}
+
+/* SELVE HJULET */
+#wheel {
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	border: 8px solid black;
+	margin: 20px auto;
+	background: conic-gradient(
+									#ff5c5c 0deg 60deg,
+									#ffdd55 60deg 120deg,
+									#5cff5c 120deg 180deg,
+									#55ddff 180deg 240deg,
+									#b355ff 240deg 300deg,
+									#55ff99 300deg 360deg
+	);
+	position: relative;
+	transition: transform 3s ease-out;
+}
+
+/* TEKST PÅ FELTERNE (super simpelt placeret) */
+.label {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform-origin: 0 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* PILEN */
+#pointer {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 40px solid black;
+	margin: 0 auto;
+}

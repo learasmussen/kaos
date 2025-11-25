@@ -39,7 +39,7 @@ require "settings/init.php";
     <div class="label" style="transform: rotate(330deg) translate(120px);">Taber</div>
 </div>
 
-<div id="pointer"></div>
+<div id="pointer" class=""></div>
 
 <div class="mt-4">
 <button id="spinBtn" class="bg-pink rounded-pill px-5 py-2 border-0">SPIN!</button>
@@ -48,8 +48,8 @@ require "settings/init.php";
 <h2 id="result"></h2>
 
 <script>
-    const wheel = document.getElementById("wheel");
-    const result = document.getElementById("result");
+    const wheel = document.querySelector("#wheel");
+    const result = document.querySelector("#result");
 
     document.getElementById("spinBtn").addEventListener("click", () => {
         const randomDeg = Math.floor(Math.random() * 360) + 1080; // 3 omgange + tilfældigt
@@ -60,10 +60,10 @@ require "settings/init.php";
 
             // VINDER-feltet er fra 120 til 180 grader
             if (finalAngle >= 120 && finalAngle < 180) {
-                result.textContent = "DU VANDT! ✔ Du må fortsætte!";
+                result.textContent = "Vandt, så kom da med";
                 result.style.color = "green";
             } else {
-                result.textContent = "Du døde";
+                result.textContent = "Du døde, prøv igen";
                 result.style.color = "red";
             }
         }, 3000);

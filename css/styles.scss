@@ -64,11 +64,17 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	height: 0;
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
-	border-bottom: 40px solid black;
+	border-bottom: 40px solid #ffffff;
 	margin: 0 auto;
+	color: white;
 }
 
 #spinBtn{
 	font-size: 3rem;
+}
+
+#result{
+	font-size: 10px;
+	margin-top: 9px;
 }
 

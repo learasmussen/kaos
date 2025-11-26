@@ -39,7 +39,10 @@ require "settings/init.php";
     <div class="label" style="transform: rotate(330deg) translate(120px);">Taber</div>
 </div>
 
-<div id="pointer" class=""></div>
+<a href="">
+<div  id="pointer" class=""></div>
+</a>
+
 
 <div class="mt-4">
 <button id="spinBtn" class="bg-pink rounded-pill px-5 py-2 border-0">SPIN!</button>

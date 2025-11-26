@@ -74,7 +74,7 @@ require "settings/init.php";
 </div>
 
 <div class="text-center ">
-    <p class="under-18">hvis du er<a href="lykkehjul.php" class="text-pink under-18"> under 18 </a><span class="text-decoration-underline under-18">klik her</span></p>
+    <p class="under-18">hvis du er<a href="lykkehjul.php" class="text-pink under-18"> under 18 </a><a href="index.php" class="text-decoration-underline under-18">klik her</a></p>
 </div>
 
 

@@ -28,12 +28,12 @@ require "settings/init.php";
 
 <div class="container">
 
-    <div class="card p-4 bg-red border-0">
+    <div class="card px-4 pt-4 bg-red border-0">
 
         <!-- DATO -->
         <label class="form-label text-pink">Dato</label>
         <input id="daySlider" type="range" min="1" max="31"
-               class="form-range bg-transparent mb-2">
+               class="form-range bg-transparent mb-2 ">
         <div id="dayValue" class="mb-3 d-flex justify-content-start"></div>
 
         <!-- MÅNED -->
@@ -68,12 +68,12 @@ require "settings/init.php";
 
         <button id="submitBtn" class="btn btn-pink text-uppercase">GOOOOOOOOOOOOOOOOOOOOOOOO</button>
 
-        <p id="statusMsg" class="mt-3"></p>
+        <p id="statusMsg" class="mt-2"></p>
 
     </div>
 </div>
 
-<div class="text-center">
+<div class="text-center ">
     <p class="under-18">hvis du er<a href="lykkehjul.php" class="text-pink under-18"> under 18 </a><span class="text-decoration-underline under-18">klik her</span></p>
 </div>
 
@@ -82,7 +82,7 @@ require "settings/init.php";
 <script>
     // Viser valgt dag
     document.getElementById("daySlider").addEventListener("input", function () {
-        document.getElementById("dayValue").innerHTML = "Valgt dato: <b>" + this.value + "</b>";
+        document.getElementById("dayValue").innerHTML = "Valgt dato:  <b class='fw-normal'>" + this.value + "</b>";
     });
 
     // Validering når man klikker på indsend
@@ -102,7 +102,7 @@ require "settings/init.php";
 
         if (isNaN(year) || year.length !== 4) {
             yearInput.classList.add("shake");
-            status.textContent = "Året skal være 4 tal, skrevet bagfra!";
+            status.textContent = "prøv igen";
             status.style.color = "red";
             return;
         }

@@ -39,7 +39,7 @@ require "settings/init.php";
     <div class="label" style="transform: rotate(330deg) translate(120px);">Taber</div>
 </div>
 
-<a href="">
+<a href="end.php">
 <div  id="pointer" class=""></div>
 </a>
 

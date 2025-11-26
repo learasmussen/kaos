@@ -139,3 +139,28 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 #daySlider::-ms-thumb {
 	background-color: #ff8b8b !important;
 }
+
+
+#congrats {
+	font-size: 2rem;
+	font-weight: bold;
+	position: relative;
+	animation: jump 0.5s infinite alternate, colorShift 1s infinite;
+	text-align: center;
+}
+
+@keyframes jump {
+	0% { transform: translateY(0px); }
+	100% { transform: translateY(-20px); }
+}
+
+
+
+
+#catchBtn {
+	margin-top: 40px;
+	position: relative;
+	padding: 10px 25px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
